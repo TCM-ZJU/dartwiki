@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<project name="DartWiki" default="deploy" basedir="./">
+	<property file="build.properties"/>
+	<property name="src.dir" value="${basedir}/WebContent"/>
+	<property name="www.dir" value="${basedir}/build/gwtOutput/ccnt.Wiki"/>
+	
+	<target name="easyDeploy" depends="clean">
+		<copy todir="${deploy.path}">
+			<fileset dir="${www.dir}">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="deploy" depends="compile,clean">
+		<copy todir="${www.dir}">
+			<fileset dir="${basedir}/src/ccnt/public">
+				<include name="**/*" />
+			</fileset>
+			<fileset dir="${src.dir}">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+		<copy todir="${deploy.path}">
+			<fileset dir="${www.dir}">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="clean">
+		<delete>
+			<fileset dir="${deploy.path}" includes="**/*" excludes="WEB-INF/**"/>
+		</delete>
+	</target>
+	
+	<target name="compile">
+		<exec executable ="cmd">
+			<arg line="/c DartWiki-compile.cmd"/>
+		</exec>
+	</target>
+
+</project>

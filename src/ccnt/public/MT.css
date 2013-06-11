@@ -1,0 +1,65 @@
+.view-list{ background: url(image/application_view_list.gif);}
+.concept-label{font-size:25;font-weight:border;}
+.bord {font-weight:border;}
+.wrap{width:984px;margin:0 auto}
+.showwrap{width:984px;height:100%;padding:0;margin:0 auto}
+.left{width:780px;height:200px;position:relative;float:left;text-align:left;margin:0 auto}
+.left_align{text-align:left}
+.right{width:200px;height:200px;position:relative;float:right;text-align:left;margin:0 auto}
+.center{text-align:center}
+.selectable{-moz-user-select:normal;-khtml-user-select:normal;}
+.mvClass{width:490px;height:573px;position:relative;float:left;text-align:left;margin:0 auto}
+.tab{width:490px;height:200px;position:relative;float:right;text-align:left;margin:0 auto}
+
+.info{height:75px;padding:10px 3px 11px 3px;background:url(imgsrc/bgs2.gif);border:1px solid #2f7ca7;overflow:hidden}
+.info li{width:240px;height:59px;float:left;padding:0 10px;font-size:12px}
+.info li a{display:block;width:240px;height:59px}
+.info li a.edit1,.info li a.edit1:hover,.info li a.edit2,.info li a.edit2:hover,.info li a.edit3,.info li a.edit3:hover{background:url(imgsrc/bg_edit.gif) no-repeat}
+.info li a.edit1{background-position:0 0}
+.info li a.edit1:hover{background-position:0 -79px}
+.info li a.edit2{background-position:-260px 0}
+.info li a.edit2:hover{background-position:-260px -79px}
+.info li a.edit3{background-position:-520px 0}
+.info li a.edit3:hover{background-position:-520px -79px}
+.info li.edit4{width:170px;padding-top:8px;text-align:center;color:#b2dff9;line-height:24px}
+.info li.edit4 span{color:#fff;font-weight:bold;font-family:"Tahoma"}
+
+
+.hot{padding-top:10px;zoom:1}
+.hot .pic{margin:0 10px 0 10px;_margin-left:5px;width:200px;height:137px;overflow:hidden}
+.hot dl{margin:0 10px}
+.hot_dt{font-size:14px;font-weight:bold;height:20px}
+.hot dd{color:#444;line-height:22px}
+.hot .other{background:#ececec;margin:10px 10px 0 10px;*margin-top:13px;padding:6px 5px 5px 10px;line-height:17px}
+
+.slide_mask{width:720px;overflow:hidden;height:120px}
+.slide_mask ul{float:left;margin:10px 0 0 0}
+.slide_mask li{float:left;width:80px;margin:0 5px;display:inline;text-align:center}
+.slide_mask li div{width:78px;height:78px;border:1px solid #ccc;overflow:hidden;text-align:center}
+.slide_mask li h4{font-size:12px;font-weight:normal;line-height:20px;width:76px;height:20px;word-break:}
+.slide_holder{width:5000px;height:90px;margin:0 50px 0 0}
+
+.task{padding:2px;font-size:12px;line-height:18px}
+.notice{padding:0;list-style:none;font-size:14px}
+.notice li{padding-left:0px;line-height:22px}
+.notice .grn,a.grn:link,a.grn:visited{color:#008800}
+.notice sup{color:red}
+
+body{text-align:center;font-family:arial,sans-serif}
+div,td{color:#000000}
+a:link,.w,.w a:link{color:#0000cc}
+a:visited{color:#551a8b}
+a:active{color:#ff0000}
+.kind{overflow:hidden;clear:both;zoom:1;padding-bottom:10px}
+.kind li{width:171px;padding:8px 0 8px 20px;float:left}
+.kind h3 a{margin-right:8px}
+.kind h2{font-size:14px;line-height:20px}
+.kind h3{vertical-align:middle;font-size:12px;line-height:20px;font-weight:normal}
+.more{font-size:12px;font-weight:normal;padding-right:10px;float:right;background:url(http://img.baidu.com/img/baike/bgs1.gif) no-repeat right 3px;padding-right:8px;text-decoration:none;margin-top:3px}
+a.more:hover{text-decoration:underline}
+.ver{padding:5px 0 5px 15px;border-bottom:0;font-weight:bold}
+
+.text_dir{border:1px solid #ccc;display:inline;margin:5px 0 0;padding:0}
+.text_dir_dl{padding:15px 30px 20px 15px;border:1px solid #ccc;}
+.text_dir_dt{font-weight:bold;margin-bottom:8px}
+.text_dir_dd{background:url(http://img.baidu.com/img/baike/bgs3.gif) no-repeat 2px -102px;padding-left:12px;line-height:20px;white-space:nowrap}

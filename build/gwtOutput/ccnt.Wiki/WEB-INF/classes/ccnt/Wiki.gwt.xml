@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+
+	<!-- Inherit the core Web Toolkit stuff.                  -->
+	<inherits name="com.google.gwt.user.User"/>
+	<inherits name="com.gwtext.GwtExt"/>
+	<inherits name="com.gwtextux.GwtExtUx"/>
+	<inherits name='com.google.gwt.xml.XML'/>
+	<inherits name='com.google.gwt.http.HTTP'/>
+
+	<!-- Specify the app entry point class.                   -->
+	<entry-point class="ccnt.client.Wiki"/>	
+	<servlet path='/GetContent.rpc' 
+		class='ccnt.server.GetContentServlet'/>
+	<stylesheet src="js/ext/resources/css/ext-all.css"/>
+	<script src="js/ext/adapter/ext/ext-base.js"/>
+	<script src="js/ext/ext-all.js"/>
+
+</module>

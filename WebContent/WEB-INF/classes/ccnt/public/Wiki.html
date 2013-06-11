@@ -1,0 +1,82 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+		<!--                                           -->
+		<!-- Any title is fine                         -->
+		<!--                                           -->
+		<title>欢迎使用</title>
+		<link rel="stylesheet" href="MT.css">
+		<!--                                           -->
+		<!-- Use normal html, such as style            -->
+		<!--                                           -->
+		<style>
+			body,td,a,div,.p{font-family:arial,sans-serif}
+			div,td{color:#000000}
+			a:link,.w,.w a:link{color:#0000cc}
+			a:visited{color:#551a8b}
+			a:active{color:#ff0000}
+		</style>
+
+		<!--                                           -->
+		<!-- The module reference below is the link    -->
+		<!-- between html and your Web Toolkit module  -->		
+		<!--                                           -->
+		<meta name='gwt:module' content='ccnt.Wiki'>
+		
+	</head>
+
+	<!--                                           -->
+	<!-- The body can have arbitrary html, or      -->
+	<!-- you can leave the body empty if you want  -->
+	<!-- to create a completely dynamic ui         -->
+	<!--                                           -->
+	<body class="xtheme-gray">
+
+		<!--                                            -->
+		<!-- This script is required bootstrap stuff.   -->
+		<!-- You can put it in the HEAD, but startup    -->
+		<!-- is slightly faster if you include it here. -->
+		<!--                                            -->
+		<link rel="stylesheet" type="text/css" href="js/ext/resources/css/ext-all.css"/>
+		<link rel="stylesheet" type="text/css" href="js/ext/resources/css/xtheme-gray.css" />
+		<script type="text/javascript" src="js/ext/adapter/yui/yui-utilities.js"></script>
+		<script type="text/javascript" src="js/ext/adapter/yui/ext-yui-adapter.js"></script>
+		<script type="text/javascript" src="js/ext/ext-all.js"></script>
+		<script language="javascript" src="gwt.js"></script>
+		<script type="text/javascript" src='js/home-panel.js'></script>
+		<script type="text/javascript">
+		function enterConcept(concept) { 
+    		newHistoryItem(concept); //"!"+
+  		} 
+		</script>
+		<!-- OPTIONAL: include this if you want history support -->
+		<iframe id="__gwt_historyFrame" style="width:0;height:0;border:0"></iframe>
+		<div class="wrap"><div id="searchPanel"/></div>
+		<div class="wrap" id="main">
+			<div id="contribute">
+				<div class="info">
+					<ul>
+						<li><a href="/edit/id=3?func=edit" target="_blank" class="edit1" onclick="userLogin('/edit/id=3?func=edit');return false;"></a></li>
+						<li><a href="/page/create_index.html?func=create" target="_blank" class="edit2"></a></li>
+						<li><a href="/improve/?func=improve" target="_blank" class="edit3"></a></li>
+						<li class="edit4"><strong>中医药专家的百科全书</strong><br>已收录词条&nbsp;<span>1346650</span>&nbsp;个</li>
+					</ul>
+				</div>
+			</div>
+			<div class="left">
+				<div id="highlight"></div>
+				<div id="catelog"></div>
+				<div id="good"></div>
+			</div>
+			<div class="right">
+				<div id="task"></div>
+				<div id="post"></div>
+				<div id="tool"></div>
+				<div id="toplist"></div>
+				<div id="link"></div>
+			</div>
+		</div>
+		<div class="wrap" id="show"></div>
+	</body>
+</html>

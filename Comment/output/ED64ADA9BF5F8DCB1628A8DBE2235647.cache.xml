@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cache-entry>
+	<generated-type-hash class="com.google.gwt.i18n.client.constants.DateTimeConstants_" hash="60199A12D629C0197611025E36AA63EC"/>
+	<generated-type-hash class="com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException_FieldSerializer" hash="FF198044879E67E1ACF2E0C29CC58CB5"/>
+	<generated-type-hash class="ccnt.client.service.GetContentService_TypeSerializer" hash="C21A3C74CE5C894D0DD212FC3C050479"/>
+	<generated-type-hash class="ccnt.client.service.GetContentService_Proxy" hash="63F23104556773BCAF4E6E617062F680"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.impl.TextBoxImpl" out="com.google.gwt.user.client.ui.impl.TextBoxImpl"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.ListBox.Impl" out="com.google.gwt.user.client.ui.ListBox.Impl"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.impl.FocusImpl" out="com.google.gwt.user.client.ui.impl.FocusImpl"/>
+	<rebind-decision in="com.google.gwt.xml.client.impl.XMLParserImpl" out="com.google.gwt.xml.client.impl.XMLParserImplStandard"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.impl.ClippedImageImpl" out="com.google.gwt.user.client.ui.impl.ClippedImageImpl"/>
+	<rebind-decision in="com.google.gwt.user.client.impl.HistoryImpl" out="com.google.gwt.user.client.impl.HistoryImplMozilla"/>
+	<rebind-decision in="com.google.gwt.user.client.impl.DOMImpl" out="com.google.gwt.user.client.impl.DOMImplMozilla"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.impl.PopupImpl" out="com.google.gwt.user.client.ui.impl.PopupImplMozilla"/>
+	<rebind-decision in="ccnt.client.Wiki" out="ccnt.client.Wiki"/>
+	<rebind-decision in="ccnt.client.service.GetContentService" out="ccnt.client.service.GetContentService_Proxy"/>
+	<rebind-decision in="com.google.gwt.i18n.client.constants.DateTimeConstants" out="com.google.gwt.i18n.client.constants.DateTimeConstants_"/>
+	<rebind-decision in="com.google.gwt.user.client.ui.impl.FormPanelImpl" out="com.google.gwt.user.client.ui.impl.FormPanelImpl"/>
+	<rebind-decision in="com.google.gwt.user.client.impl.HTTPRequestImpl" out="com.google.gwt.user.client.impl.HTTPRequestImpl"/>
+</cache-entry>

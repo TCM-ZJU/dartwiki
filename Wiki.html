@@ -1,0 +1,193 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+		<!--                                           -->
+		<!-- Any title is fine                         -->
+		<!--                                           -->
+		<title>欢迎使用</title>
+		<link rel="stylesheet" href="MT.css">
+		<!--                                           -->
+		<!-- Use normal html, such as style            -->
+		<!--                                           -->
+		<style>
+			body,td,a,div,.p{font-family:arial,sans-serif}
+			div,td{color:#000000}
+			a:link,.w,.w a:link{color:#0000cc}
+			a:visited{color:#551a8b}
+			a:active{color:#ff0000}
+		</style>
+
+		<!--                                           -->
+		<!-- The module reference below is the link    -->
+		<!-- between html and your Web Toolkit module  -->		
+		<!--                                           -->
+		<meta name='gwt:module' content='ccnt.Wiki'>
+		
+	</head>
+
+	<!--                                           -->
+	<!-- The body can have arbitrary html, or      -->
+	<!-- you can leave the body empty if you want  -->
+	<!-- to create a completely dynamic ui         -->
+	<!--                                           -->
+	<body class="xtheme-gray">
+
+		<!--                                            -->
+		<!-- This script is required bootstrap stuff.   -->
+		<!-- You can put it in the HEAD, but startup    -->
+		<!-- is slightly faster if you include it here. -->
+		<!--                                            -->
+		<link rel="stylesheet" type="text/css" href="./js/ext/resources/css/ext-all.css"/>
+		<link rel="stylesheet" type="text/css" href="./js/ext/resources/css/xtheme-gray.css" />
+		<script type="text/javascript" src="js/ext/adapter/yui/yui-utilities.js"></script>
+		<script type="text/javascript" src="js/ext/adapter/yui/ext-yui-adapter.js"></script>
+		<script type="text/javascript" src="js/ext/ext-all.js"></script>
+		<script language="javascript" src="gwt.js"></script>
+		<script src="AC_OETags.js" language="javascript"></script>
+		<script language="JavaScript">
+<!--
+
+var isSwfCreated = false;
+var pendLoadMap = false;
+var concept = "";
+var typeUri = "";
+function swfCreated()
+{
+	isSwfCreated = true;
+	if (pendLoadMap)
+	{
+		loadMapData(concept, typeUri);
+	}
+}
+// Internet Explorer and Mozilla-based browsers refer to the Flash application 
+// object differently.
+// This function returns the appropriate reference, depending on the browser.
+function getMyApp(appName)
+{
+    if (navigator.appName.indexOf ("Microsoft") !=-1)
+	{
+        return window[appName];
+    }
+	else
+	{
+        return document[appName];
+    }
+}
+
+function loadMapData(c, t)
+{
+	if (isSwfCreated)
+	{
+    	getMyApp("mv").loadMap(null);
+	}
+	else
+	{
+		pendLoadMap = true;
+		concept = c;
+		typeUri = t;
+	}
+}
+
+function changeMap(concept, typeUri)
+{
+	alert("concept: " + concept + "\ntypeUri: " + typeUri);
+}
+	// -->
+</script>
+
+		<!-- OPTIONAL: include this if you want history support -->
+		<iframe id="__gwt_historyFrame" style="width:0;height:0;border:0"></iframe>
+		<div class="wrap" id="searchPanel"/></div>
+	
+		<div class="wrap" id="show">
+			<div id="detail">
+				<div class="mvClass" id="mvDiv">
+<script language="JavaScript" type="text/javascript">
+	<!--
+// -----------------------------------------------------------------------------
+// Globals
+// Major version of Flash required
+var requiredMajorVersion = 9;
+// Minor version of Flash required
+var requiredMinorVersion = 0;
+// Minor version of Flash required
+var requiredRevision = 124;
+// -----------------------------------------------------------------------------
+	// Version check for the Flash Player that has the ability to start Player Product Install (6.0r65)
+	var hasProductInstall = DetectFlashVer(6, 0, 65);
+	
+	// Version check based upon the values defined in globals
+	var hasRequestedVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+	
+	if ( hasProductInstall && !hasRequestedVersion ) {
+		// DO NOT MODIFY THE FOLLOWING FOUR LINES
+		// Location visited after installation is complete if installation is required
+		var MMPlayerType = (isIE == true) ? "ActiveX" : "PlugIn";
+		var MMredirectURL = window.location;
+	    document.title = document.title.slice(0, 47) + " - Flash Player Installation";
+	    var MMdoctitle = document.title;
+	
+		AC_FL_RunContent(
+			"src", "playerProductInstall",
+			"FlashVars", "MMredirectURL="+MMredirectURL+'&MMplayerType='+MMPlayerType+'&MMdoctitle='+MMdoctitle+"",
+			"width", "100%",
+			"height", "100%",
+			"align", "middle",
+			"id", "mv",
+			"quality", "high",
+			"bgcolor", "#f8f8f8",
+			"name", "mv",
+			"allowScriptAccess","sameDomain",
+			"type", "application/x-shockwave-flash",
+			"pluginspage", "http://www.adobe.com/go/getflashplayer"
+		);
+	} else if (hasRequestedVersion) {
+		// if we've detected an acceptable version
+		// embed the Flash Content SWF when all tests are passed
+		AC_FL_RunContent(
+				"src", "mv",
+				"width", "100%",
+				"height", "100%",
+				"align", "middle",
+				"id", "mv",
+				"quality", "high",
+				"bgcolor", "#f8f8f8",
+				"name", "mv",
+				"allowScriptAccess","sameDomain",
+				"type", "application/x-shockwave-flash",
+				"pluginspage", "http://www.adobe.com/go/getflashplayer"
+		);
+	  } else {  // flash is too old or we can't detect the plugin
+	    var alternateContent = 'Alternate HTML content should be placed here. '
+	  	+ 'This content requires the Adobe Flash Player. '
+	   	+ '<a href=http://www.adobe.com/go/getflash/>Get Flash</a>';
+	    document.write(alternateContent);  // insert non-flash content
+	  }
+	// -->
+</script>
+<noscript>
+  	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+			id="mv" width="100%" height="100%"
+			codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab">
+			<param name="movie" value="mv.swf" />
+			<param name="quality" value="high" />
+			<param name="bgcolor" value="#f8f8f8" />
+			<param name="allowScriptAccess" value="sameDomain" />
+			<embed src="mv.swf" quality="high" bgcolor="#f8f8f8"
+				width="100%" height="100%" name="mv" align="middle"
+				play="true"
+				loop="false"
+				quality="high"
+				allowScriptAccess="sameDomain"
+				type="application/x-shockwave-flash"
+				pluginspage="http://www.adobe.com/go/getflashplayer">
+			</embed>
+	</object>
+</noscript>
+				</div>
+				<div class="tab"></div>
+			</div>
+		</div>
+	</body>
+</html>
